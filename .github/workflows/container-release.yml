@@ -52,6 +52,5 @@ jobs:
         push: true
         file: ./Dockerfile
         platforms: linux/amd64,linux/arm64
-        # tags: ${{ env.REGISTRY }}/${{ env.USER }}/${{ env.IMAGE_NAME }}:latest
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
