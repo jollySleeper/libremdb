@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  USER: jollysleeper
+  USER: ${{ github.repository_owner }}
   IMAGE_NAME: ${{ github.repository }}
 
 permissions:
